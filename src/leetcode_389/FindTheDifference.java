@@ -35,6 +35,14 @@ public class FindTheDifference {
         }
         return ans;
     }
+    /*
+    XOR ^
+    00 0
+    01 1
+    10 1
+    11 0
+    tell the difference
+     */
     public static char findTheDifference2(String s, String t){
         int res = 0;
         for( char c : s.toCharArray()) res = res ^ c;
